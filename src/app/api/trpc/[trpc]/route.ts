@@ -10,3 +10,4 @@ const handler = (req: Request) => fetchRequestHandler({
     onError: process.env.NODE_ENV === "development" ? console.error: console.error,   
 });
 
+export { handler as GET, handler as POST };
